@@ -1,5 +1,6 @@
 #jumbotron {
-    padding: 6rem 0rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
     margin-top: 3rem;
     background-color: #2E2836;
     color: white;
@@ -18,4 +19,8 @@ body {
 #explore {
     background-color: #02111b;
     color: white;
+}
+
+.card {
+    background-color: black;
 }

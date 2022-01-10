@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
@@ -31,7 +32,10 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" style="background-color: #001524;">
         <div class="container">
-            <a class="navbar-brand h1 mb-0 fw-bold" href="#">Tude Maha</a>
+            <a class="navbar-brand h1 mb-0 fw-bold d-flex align-items-center" href="#">
+                <img src="img/nav-icon.png" alt="Tude Maha Icon" height="28" class="d-inline-block pe-2">
+                Tude Maha
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,49 +56,103 @@
     <!-- End of Navbar -->
 
     <!-- Jumbotron -->
-        <section id="jumbotron">
-            <div class="container">
-                <div class="row justify-content-center align-items-end">
-                    <div class="col-md-6 order-last order-md-first text-center text-md-start">
-                        <h1 class="display-5 fw-bolder"><span id="typed"></span></h1>
-                        <p class="lead">
-                            Hello! I'm Tude Maha, a junior developer. Now, I'm studying informatics at one of the state universities in Bali.
-                            Welcome in my homepage, please scroll down to explore more about me.
-                        </p>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-md-4 text-center order-first order-md-last">
-                        <img src="img/profile.png" alt="Tude Maha" width="250px" class="pb-3 pb-md-0">
-                    </div>
+    <section id="jumbotron">
+        <div class="container">
+            <div class="row justify-content-center align-items-end">
+                <div class="col-md-6 order-last order-md-first text-center text-md-start">
+                    <h1 class="display-5 fw-bolder"><span id="typed"></span></h1>
+                    <p class="lead">
+                        Hello! I'm Tude Maha, a junior developer. Now, I'm studying informatics at one of the state universities in Bali.
+                        Welcome in my homepage, please scroll down to explore more about me.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 text-center order-first order-md-last">
+                    <img src="img/profile.png" alt="Tude Maha" width="250px" class="pb-3 pb-md-0">
+                    <div class="row"></div>
                 </div>
             </div>
-            <script>
-                var typed = new Typed('#typed', {
-                  strings: ["Welcome!"],
-                  typeSpeed: 100,
-                  startDelay: 80,
-                  loop: true
-                });
-            </script>
-        </section>
+        </div>
+        <script>
+            var typed = new Typed('#typed', {
+                strings: ["Welcome!"],
+                typeSpeed: 120,
+                startDelay: 80,
+                loop: true
+            });
+        </script>
+    </section>
     <!-- End of Jumbotron -->
 
     <!-- Explore me -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        <section id="explore">
-            <!-- <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2E2836" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,154.7C384,160,480,96,576,58.7C672,21,768,11,864,48C960,85,1056,171,1152,192C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col">
-                        <h1>Explore Me</h1>
+    <section id="explore">
+        <!-- <svg data-aos="fade-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2E2836" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,154.7C384,160,480,96,576,58.7C672,21,768,11,864,48C960,85,1056,171,1152,192C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col pt-3 pb-1">
+                    <h1>Explore Me</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <a href="https://tudemaha.github.io/portfolio" target="_blank"><img src="img/portfolio.png" alt="Portfolio" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5 class="card-tittle">Portfolio</h5>
+                            <p class="card-text">
+                                My personal portfolio website (and also be my GitHub Pages) contains a piece information about me, my skills, projects, and a form to contact me.
+                            </p>
+                            <a class="btn btn-primary" href="https://tudemaha.github.io/portfolio" target="_blank">
+                                My Portfolio 
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="https://github.com/tudemaha" target="_blank"><img src="img/github.png" alt="Github" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5 class="card-tittle">GitHub</h5>
+                            <p class="card-text">
+                                GitHub to store and share some little projects for my lectures and also my hobbies. Feel free to review, fork, and do a pull request to my code.
+                            </p>
+                            <a class="btn btn-primary" href="https://github.com/tudemaha" target="_blank">
+                                My GitHub 
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="https://www.youtube.com/channel/UC_1ebtlaH6VQereFmkmqCtg" target="_blank"><img src="img/youtube.png" alt="YouTube" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h5 class="card-tittle">YouTube</h5>
+                            <p class="card-text">
+                                Specifically, I share about programming, eletronics, Arduino, Excel, and some tips and tricks on my YouTube channel. Just a few videos for now, but I wish I could share more.
+                            </p>
+                            <a class="btn btn-primary" href="https://www.youtube.com/channel/UC_1ebtlaH6VQereFmkmqCtg" target="_blank">
+                                My YouTube Channel
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- end of explore me -->
 
+    <!-- footer -->
+    <footer>
+        <p>Created with love by Tude Maha.</p>
+    </footer>
 
-    <script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- end of footer -->
+
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
