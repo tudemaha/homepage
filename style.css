@@ -24,3 +24,8 @@ body {
 .card {
     background-color: black;
 }
+
+footer {
+    background-color: #2E2836;
+    color: white;
+}
