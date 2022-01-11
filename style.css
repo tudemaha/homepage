@@ -1,8 +1,12 @@
+.navbar {
+    background-color: #27283e;
+}
+
 #jumbotron {
     padding-top: 6rem;
     padding-bottom: 10rem;
     margin-top: 3rem;
-    background-color: #2E2836;
+    background-color: #3c3d58;
     color: white;
 }
 
@@ -11,21 +15,32 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #02111b;
+    background-color: #1c1d38;
 }
 
 /* .dropdown:hover .dropdown-menu {display:block;} */
 
 #explore {
-    background-color: #02111b;
+    background-color: #3c3d58;
     color: white;
 }
 
 .card {
-    background-color: black;
+    background-color: #595b83;
 }
 
 footer {
-    background-color: #2E2836;
+    background-color: #27283e;
+    color: white;
+}
+
+.btn {
+    background-color: #d0213e;
+    color: white;
+    transition: .2s ease-in;
+}
+
+.btn:hover {
+    background-color: #3c3d58;
     color: white;
 }
