@@ -3,7 +3,7 @@
 }
 
 #jumbotron {
-    padding-top: 4.8rem;
+    padding-top: 4rem;
     padding-bottom: 10rem;
     margin-top: 3rem;
     background-color: #3c3d58;
@@ -48,64 +48,60 @@ footer {
     color: white;
 }
 
+/* Profile Picture Section */
 .profile-frame {
     position: relative;
     /* background-color: #595b83; */
     background-color: rgba(red, green, blue, 0);
+    width: 100%;
+    height: 450px;
     border-radius: 15px;
-    width: 280px;
-    height: 455px;
-    left: 25%;
-    transform: translate(-25%, 0);
+    /* left: 500%; */
+    /* transform: translate(-500%, 0); */
     transform-style: preserve-3d;
 }
 
 .profile-frame::before {
     position: absolute;
-    content: 'This is Me!';
-    font-weight: bold;
+    content: "This is Me!";
     font-size: 30px;
-    width: 100%;
-    /* left: 50%; */
-    /* top: 10px; */
-    /* transform: translate(-50%, 0); */
-    transform: translate3d(-65%, 0, 100px);
+    font-weight: bold;
+    left: 210px;
+    transform: translate(-50%, 0);
     opacity: 0;
     transition: 0.5s;
 }
 
-.profile-frame:hover::before {
-    opacity: 0.7;
-
-}
-
 .profile-picture {
     position: absolute;
-    width: 250px;
-    top: 46%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 60px);
+    top: 29px;
+    transform: translate(-50%, 0);
+    height: 85%;
     transition: 0.5s;
-}
-
-.profile-frame:hover .profile-picture {
-    transform: translate3d(-50%, -50%, 60px) scale(1.1) rotate(2deg);
 }
 
 .profile-name {
     position: absolute;
     background-color: rgba(208, 33, 62, 0.9);
     border-radius: 10px;
-    /* backdrop-filter: blur(5px); */
-    padding-top: 6px;
-    height: 40px;
-    width: 100%;
-    top: 375px;
+    top: 410px;
+    padding: 5px 0;
+    min-width: 280px;
     left: 50%;
-    transform: translate3d(-50%, 0, 80px);
+    transform: translate(-50%, 0);
     transition: 0.5s;
 }
 
+.profile-frame:hover::before {
+    transform: translate3d(-50%, 4px, 70px);
+    opacity: 0.75;
+}
+
+.profile-frame:hover .profile-picture {
+    transform: translate3d(-50%, 0, 60px) scale(1.1) rotate(2deg);
+}
+
 .profile-frame:hover .profile-name {
-    transform: translate3d(-50%, 0, 80px) scale(1.2) rotate(1deg);
+    transform: translate3d(-50%, 0, 80px) scale(1.1) rotate(2deg);
 }
