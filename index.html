@@ -14,8 +14,6 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +22,9 @@
 
     <!-- typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Tude Maha | Home Page</title>
 
@@ -88,7 +89,7 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-offset="250">
                         <a href="https://tudemaha.github.io/portfolio" target="_blank"><img src="img/portfolio.png" alt="Portfolio" class="card-img-top"></a>
                         <div class="card-body text-center">
                             <h5 class="card-tittle">Portfolio</h5>
@@ -103,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-offset="250">
                         <a href="https://github.com/tudemaha" target="_blank"><img src="img/github.png" alt="Github" class="card-img-top"></a>
                         <div class="card-body text-center">
                             <h5 class="card-tittle">GitHub</h5>
@@ -118,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <a href="https://www.youtube.com/channel/UC_1ebtlaH6VQereFmkmqCtg" target="_blank"><img src="img/youtube.png" alt="YouTube" class="card-img-top"></a>
                         <div class="card-body text-center">
                             <h5 class="card-tittle">YouTube</h5>
@@ -164,10 +165,13 @@
     </script>
 
 
-    <!--  AOS -->
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+          delay: 100,
+          easing: 'ease-out'
+      });
     </script>
 
     <!-- Tilt JS -->
