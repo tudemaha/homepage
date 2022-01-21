@@ -3,10 +3,9 @@
 }
 
 #jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 10rem;
+    padding: 4rem 0;
     margin-top: 3rem;
-    background-color: #3c3d58;
+    background-color: #353652;
     color: white;
 }
 
@@ -28,8 +27,14 @@ body {
 
 
 #explore {
+    /* background-color: #353652; */
     background-color: #3c3d58;
     color: white;
+    overflow: hidden;
+}
+
+#explore-me {
+    margin-top: -3rem;
 }
 
 .card {

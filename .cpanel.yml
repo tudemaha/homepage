@@ -1,8 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/tudemaha/public_html/test/
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/tudemaha/public_html
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp favicon.ico $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
